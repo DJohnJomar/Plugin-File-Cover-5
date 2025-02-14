@@ -25,11 +25,31 @@ h1, h2, h3, h4{
     background-repeat: no-repeat;
     background-position: center;
 }
-.section-2 .row .col img{
+.section-2 .row .col:nth-child(1){
+    border:1px solid red; 
+    background-image: url(images/another-girl.png);
+}
+.section-2 .row .col:nth-child(2){
+    border:1px solid red; 
+    background-image: url(images/Kayo.png);
+}
+.section-2 .row .col:nth-child(3){
+    border:1px solid red; 
+    background-image: url(images/panda.png);
+}
+.section-2 .row .col:nth-child(4){
+    border:1px solid red; 
+    background-image: url(images/asian-girl.png);
+}
+.section-2 .row .col:nth-child(5){
+    border:1px solid red; 
+    background-image: url(images/robo-girl.png);
+}
+.section-2 .row .col{
+    min-width:200px;
     width: 200px; /* Set a fixed width */
+    min-height: 300px;
     height: 300px; /* Set a fixed height */
-    object-fit: cover; /* Crops excess but keeps aspect ratio */
-    object-position: top;
 
     border-radius: 10%;
 }
