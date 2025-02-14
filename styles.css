@@ -4,8 +4,20 @@
         url(fonts/angas\ v3\ bold.ttf);
 }
 
+.sr-only {
+    position: absolute;    /* Take the element out of the flow */
+    width: 1px;            /* Make the element effectively tiny */
+    height: 1px;           /* Ensure it doesn’t take up space */
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;      /* Prevent the content from being visible */
+    clip: rect(0, 0, 0, 0);/* Completely clip the element from view */
+    white-space: nowrap;   /* Prevent the text from wrapping */
+    border: 0;
+}
+
 body{
-    background-color: #181717;
+    background-color: #1b1b1b;
     color:white;
     box-sizing: border-box;
 }
@@ -84,7 +96,7 @@ h1, h2, h3, h4{
     min-height: 300px;
     height: 300px; /* Set a fixed height */
 
-    border-radius: 10%;
+    border-radius: 2em;
 }
 
 .section-2 .row .col a{
@@ -113,6 +125,18 @@ h1, h2, h3, h4{
 .section-2 .row .col:not(:last-child){
     background-color: black; /* Needed for blending */
     background-blend-mode: luminosity; /* Turns it grayscale */
+}
+
+.section-3 form input{
+    background-color: black;
+    color:white;
+    border:1px solid rgba(128, 128, 128, 0.1);
+    border-radius:5em;
+}
+.section-3 .row{
+    background-color: rgb(17, 17, 17);
+    border:5px solid rgba(136, 136, 136, 0.1);
+    border-radius:5em;
 }
 
 
