@@ -28,22 +28,27 @@ h1, h2, h3, h4{
 .section-2 .row .col:nth-child(1){
     border:1px solid red; 
     background-image: url(images/another-girl.png);
+    background-position: top;
 }
 .section-2 .row .col:nth-child(2){
     border:1px solid red; 
     background-image: url(images/Kayo.png);
+    background-position: top;
 }
 .section-2 .row .col:nth-child(3){
     border:1px solid red; 
     background-image: url(images/panda.png);
+    background-position: top;
 }
 .section-2 .row .col:nth-child(4){
     border:1px solid red; 
     background-image: url(images/asian-girl.png);
+    background-position: top;
 }
 .section-2 .row .col:nth-child(5){
     border:1px solid red; 
     background-image: url(images/robo-girl.png);
+    background-position: top;
 }
 .section-2 .row .col{
     min-width:200px;
@@ -63,4 +68,48 @@ h1, h2, h3, h4{
     background-image: url(images/btn-arrow.png);
     background-size:contain;
     background-repeat:no-repeat;
+}
+
+
+
+/* for Mobile s (inpection mode small mobile size)devices */
+
+@media(min-width:320px){
+
+}
+
+/* for Mobile L (inpection mode large mobile size)devices */
+
+@media(min-width:425px){
+  
+}
+
+/* for small(sm) devices */
+
+@media(min-width:576px){
+
+}
+
+/* for medium(mm) devices */
+
+@media(min-width:768px){
+
+}
+
+/* for large(lg) devices */
+
+@media(min-width:992px){
+
+}
+
+/* for extra large(xl) devices */
+
+@media(min-width:1200px){
+
+}
+
+/* for extra extra large(xxl) devices */
+
+@media(min-width:1400px){
+
 }
