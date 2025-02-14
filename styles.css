@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Angas';
+    src:url(fonts/angas\ v3\ bold.otf),
+        url(fonts/angas\ v3\ bold.ttf);
+}
+
+body{
+    background-color: #181717;
+    color:white;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-family: "Angas";
+}
+
+.section-1 img, .section-2 img, .section-3 img{
+    max-width:80%;
+}
+
+.section-2 .row .col{
+    position:relative;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-2 .row .col img{
+    width: 200px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Crops excess but keeps aspect ratio */
+    object-position: top;
+
+    border-radius: 10%;
+}
+
+.section-2 .row .col a{
+    width:1.3em;
+    height: 1.3em;
+    position:absolute;
+    top:90%;
+
+    background-image: url(images/btn-arrow.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
