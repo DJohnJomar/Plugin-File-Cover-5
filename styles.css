@@ -18,6 +18,26 @@ h1, h2, h3, h4{
     max-width:80%;
 }
 
+.btn{
+    font-family: "Angas";
+    background-color: #F1FF2A;
+    border-radius: 5em ;
+}
+
+.button-arrow{
+    width:1.5em;
+    height: 1.5em;
+    position:relative;
+
+    background-image: url(images/btn-arrow.png);
+    background-size:contain;
+    background-repeat:no-repeat; 
+}
+
+.section-2 h2{
+    color:#F1FF2A;
+}
+
 .section-2 .row .col{
     position:relative;
     
