@@ -16,6 +16,10 @@
     border: 0;
 }
 
+.indented{
+    text-indent: 2em;
+}
+
 body{
     background-color: rgb(27, 27, 27);
     color:white;
@@ -47,6 +51,8 @@ h1, h2, h3, h4{
     height: 1.5em;
     position:relative;
 
+    display: inline-block;
+
     background-image: url(images/btn-arrow.png);
     background-size:contain;
     background-repeat:no-repeat; 
@@ -56,7 +62,7 @@ h1, h2, h3, h4{
     color:#F1FF2A;
 }
 
-.section-2 .row .col{
+.section-2 .image{
     position:relative;
     
     background-size: cover;
@@ -97,13 +103,15 @@ h1, h2, h3, h4{
     font-size:0.5em;
 }
 .section-2 .image{
-    min-width:200px;
-    width: 200px; /* Set a fixed width */
+    max-width:200px;
+    /* width: 200px;  */
     min-height: 300px;
-    height: 300px; /* Set a fixed height */
+    /* height: 300px;  */
 
     border-radius: 2em;
 }
+
+
 
 .section-2 .image a{
     width:1.5em;
@@ -126,7 +134,7 @@ h1, h2, h3, h4{
 }
 
 .section-2 .image:not(:last-child) a{
-    top:90%;
+    top:85%;
 }
 .section-2 .image:not(:last-child){
     background-color: black; /* Needed for blending */
@@ -168,6 +176,22 @@ h1, h2, h3, h4{
 /* for medium(mm) devices */
 
 @media(min-width:768px){
+    .section-1 img, .section-2 img, .section-3 img{
+        max-width:50%;
+    }
+    .section-2 .image {
+        min-width: unset;
+        max-width: unset;
+    }
+    .section-2 .image:not(:last-child) a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section-3 img {
+        max-width: 120%; /* Adjust this as needed */
+        width: auto;
+    }
 
 }
 
