@@ -17,7 +17,7 @@
 }
 
 body{
-    background-color: #1b1b1b;
+    background-color: rgb(27, 27, 27);
     color:white;
     box-sizing: border-box;
 }
@@ -28,6 +28,12 @@ h1, h2, h3, h4{
 
 .section-1 img, .section-2 img, .section-3 img{
     max-width:80%;
+}
+
+.section-1{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(27, 27, 27, .6) 100%),url(images/section-1-bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .btn{
